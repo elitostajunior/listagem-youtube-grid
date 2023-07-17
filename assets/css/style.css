@@ -2,12 +2,8 @@
 
 body {
     display: grid;
-    grid-template-columns: 18vw 1fr;
+    grid-template-columns: 330px 1fr;
     grid-template-rows: 6vh 94vh;
-}
-
-.item {
-    border: 1px solid blue;
 }
 
 header {
@@ -75,21 +71,62 @@ aside {
 }
 
 main {
-    background-color: #f9f9f9;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    padding: 5px 35px;
+    padding: 5px 30px;
     display: grid;
     grid-template-columns: repeat(4, 310px);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 5px 25px;
+    grid-template-rows: repeat(3, 295px);
+    gap: 0 30px;
 }
 
-.video-grid-box {
-    background-color: #f9f9f9;  
+main, .video-grid-box, .video-info-img, .video-info-img img,
+.video-info-box, .title, .subtitle {
+    background-color: #f9f9f9;
+}
+
+.video-grid-box {  
     padding: 16px;
 }
 
 .video-grid-box img {
     width: 100%;
+}
+
+.video-grid-info {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.video-info-img {
+    padding-right: 12px;
+}
+
+.video-info-img img {
+    width: 42px;
+}
+
+.video-info-box {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.video-info-box .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.video-info-box .title a {
+    text-decoration: none;
+    color: #000;
+}
+
+.video-info-box .subtitle {
+    color: #515151;
+    font-size: 14px;
 }
